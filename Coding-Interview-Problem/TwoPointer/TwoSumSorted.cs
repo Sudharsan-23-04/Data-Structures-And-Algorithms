@@ -1,7 +1,7 @@
 ﻿//https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 
-
-int[] TwoSum(int[] numbers, int target)
+TwoSumSorted([-5, -2, 3, 4, 6], 7);
+int[] TwoSumSorted(int[] numbers, int target)
 {
     int left = 0;
     int right = numbers.Length - 1;
