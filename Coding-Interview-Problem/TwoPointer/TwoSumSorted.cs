@@ -1,25 +1,29 @@
-﻿//https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
-
-TwoSumSorted([-5, -2, 3, 4, 6], 7);
-static int[] TwoSumSorted(int[] numbers, int target)
+﻿namespace Coding_Interview_Problem.TwoPointer
 {
-    int left = 0;
-    int right = numbers.Length - 1;
-    while (left < right)
+    public static partial class TwoPointer
     {
-        var sum = numbers[left] + numbers[right];
-        if (target == sum)
+        //https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+        public static int[] TwoSumSorted(int[] numbers, int target)
         {
-            return [left + 1, right + 1];
-        }
-        else if (sum > target)
-        {
-            right -= 1;
-        }
-        else if (sum < target)
-        {
-            left += 1;
+            int left = 0;
+            int right = numbers.Length - 1;
+            while (left < right)
+            {
+                var sum = numbers[left] + numbers[right];
+                if (target == sum)
+                {
+                    return [left + 1, right + 1];
+                }
+                else if (sum > target)
+                {
+                    right -= 1;
+                }
+                else if (sum < target)
+                {
+                    left += 1;
+                }
+            }
+            return [];
         }
     }
-    return [];
 }
