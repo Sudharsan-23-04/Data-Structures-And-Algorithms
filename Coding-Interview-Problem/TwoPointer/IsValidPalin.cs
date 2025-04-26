@@ -8,7 +8,8 @@ namespace Coding_Interview_Problem.TwoPointer
 {
     public static partial class TwoPointer
     {
-        public static bool IsValidPalin(string str)
+        //https://leetcode.com/problems/valid-palindrome/
+        public static bool IsPalindrome(string str)
         {
             if (string.IsNullOrEmpty(str))
             {
@@ -18,17 +19,22 @@ namespace Coding_Interview_Problem.TwoPointer
             var left = 0;
             var right = str.Length - 1;
 
-            while(left < right)
+            while (left < right)
             {
-                if (str[left] != str[right])
+                while (left < right && !char.IsLetterOrDigit(str[left]))
+                {
+                    left += 1;
+                }
+                while (left < right && !char.IsLetterOrDigit(str[right]))
+                {
+                    right -= 1;
+                }
+                if (char.ToLowerInvariant(str[left]) != char.ToLowerInvariant(str[right]))
                 {
                     return false;
                 }
-                else
-                {
-                    left += 1;
-                    right -= 1;
-                }
+                left += 1;
+                right -= 1;
             }
 
             return true;
