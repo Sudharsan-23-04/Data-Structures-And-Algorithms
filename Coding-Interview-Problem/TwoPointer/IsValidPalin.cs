@@ -3,6 +3,7 @@
     public static partial class TwoPointer
     {
 
+
         //https://leetcode.com/problems/valid-palindrome/
         public static bool IsPalindrome(string str)
         {
