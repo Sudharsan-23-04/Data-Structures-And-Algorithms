@@ -23,7 +23,7 @@ namespace Coding_Interview_Problem.LinkedList
 
             // If n is greater than the length of the list
             if (i < n)
-                throw new ArgumentException("n is greater than the length of the linked list");
+                throw new Exception("n is greater than the length of the linked list");
 
             var second = head;
 
