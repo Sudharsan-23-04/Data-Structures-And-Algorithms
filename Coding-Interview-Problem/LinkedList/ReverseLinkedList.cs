@@ -5,7 +5,7 @@
         public static LinkedList<T> ReverseList<T>(LinkedList<T> head)
         {
             var curNode = head;
-            LinkedList<T> prevNode = null;
+            LinkedList<T>? prevNode = null;
             while (curNode is not null)
             {
                 var nextNode = curNode.Next;
