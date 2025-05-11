@@ -2,6 +2,7 @@
 {
     public static partial class HashMapAndSets
     {
+        //https://leetcode.com/problems/valid-sudoku/description/
         public static bool IsValidSudoku(char[][] board)
         {
             var rowHashSet = Enumerable.Range(0, 9)

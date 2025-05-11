@@ -8,6 +8,7 @@ namespace Coding_Interview_Problem.FastAndSlowPointer
 {
     public static partial class FastAndSlowPointer
     {
+        //https://leetcode.com/problems/happy-number/description/
         public static bool IsHappy(int n)
         {
             var slow = n;

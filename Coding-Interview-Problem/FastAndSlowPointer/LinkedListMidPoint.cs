@@ -2,6 +2,7 @@
 {
     public static partial class FastAndSlowPointer
     {
+        //https://leetcode.com/problems/middle-of-the-linked-list/description/
         public static LinkedList<T> MiddleNode<T>(LinkedList<T> head)
         {
             var slow = head;

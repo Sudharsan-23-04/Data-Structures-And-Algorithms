@@ -2,6 +2,7 @@
 {
     public static partial class LinkedList
     {
+        //https://leetcode.com/problems/reverse-linked-list/description/
         public static LinkedList<T> ReverseList<T>(LinkedList<T> head)
         {
             var curNode = head;

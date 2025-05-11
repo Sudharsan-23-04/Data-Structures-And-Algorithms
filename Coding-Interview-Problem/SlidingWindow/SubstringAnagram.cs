@@ -2,6 +2,7 @@
 {
     public static partial class SubstringAnagram
     {
+        //https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
         public static IList<int> FindAnagrams(string s, string p)
         {
             var result = new List<int>();
