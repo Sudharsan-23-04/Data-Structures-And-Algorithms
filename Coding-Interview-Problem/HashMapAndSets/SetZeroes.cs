@@ -2,6 +2,7 @@
 {
     public static partial class HashMapAndSets
     {
+        //https://leetcode.com/problems/set-matrix-zeroes/description/
         public static void SetZeroes(int[][] matrix)
         {
             var rowHashSet = new HashSet<int>();

@@ -2,6 +2,7 @@
 {
     public static partial class SubstringAnagram
     {
+        //https://leetcode.com/problems/longest-repeating-character-replacement/description/
         public static int CharacterReplacement(string s, int k)
         {
             var dict = new Dictionary<char, int>();

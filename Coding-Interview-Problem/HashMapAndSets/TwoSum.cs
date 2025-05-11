@@ -2,6 +2,7 @@
 {
     public static partial class HashMapAndSets
     {
+        ///https://leetcode.com/problems/two-sum/description/
         public static int[] TwoSum(int[] nums, int target)
         {
             var dict = new Dictionary<int, int>();
