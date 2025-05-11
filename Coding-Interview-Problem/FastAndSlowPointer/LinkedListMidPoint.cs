@@ -2,7 +2,7 @@
 {
     public static partial class FastAndSlowPointer
     {
-        public LinkedList<T> MiddleNode<T>(LinkedList<T> head)
+        public static LinkedList<T> MiddleNode<T>(LinkedList<T> head)
         {
             var slow = head;
             var fast = head;
